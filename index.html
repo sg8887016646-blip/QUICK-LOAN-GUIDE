@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Quick Loan Guide - Loan Information</title>
+<title>QUICK LOAN GUIDE</title>
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -26,38 +27,38 @@ body {
 header {
     background: #071d35;
     color: white;
-    padding: 20px 8%;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 18px;
+    margin: 10px;
 }
 
 .hero {
     background: linear-gradient(120deg, #071d35, #0879c9);
     color: white;
-    padding: 100px 8%;
     text-align: center;
+    padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 30px;
 }
 
@@ -66,9 +67,10 @@ nav a {
     background: #ffb703;
     color: #071d35;
     padding: 15px 30px;
-    border-radius: 6px;
+    border-radius: 7px;
     text-decoration: none;
     font-weight: bold;
+    margin: 10px;
     cursor: pointer;
 }
 
@@ -77,20 +79,20 @@ nav a {
 }
 
 section {
-    padding: 65px 8%;
+    padding: 70px 8%;
     text-align: center;
+    scroll-margin-top: 20px;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
     color: #071d35;
+    margin-bottom: 30px;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 20px;
 }
 
 .card {
@@ -117,54 +119,38 @@ h2 {
     background: white;
 }
 
-.offer p {
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-.disclaimer {
-    font-size: 13px;
-    color: #666;
-    margin-top: 25px;
-}
-
 footer {
     background: #071d35;
     color: white;
-    text-align: center;
     padding: 30px;
+    text-align: center;
 }
 
-footer p {
-    margin-top: 10px;
+footer a {
+    color: #ffb703;
 }
 
-@media(max-width: 700px) {
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
+@media(max-width:700px) {
 
     header {
         flex-direction: column;
         gap: 15px;
     }
 
-    nav a {
-        margin: 5px;
-        display: inline-block;
+    .cards {
+        grid-template-columns: 1fr;
     }
 
     .hero h1 {
         font-size: 30px;
     }
+
 }
+
 </style>
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
 
@@ -181,114 +167,118 @@ footer p {
 
 </header>
 
-<!-- HOME SECTION -->
+<!-- HOME -->
 
 <div class="hero" id="home">
 
-    <h1>Explore Loan Information</h1>
+    <h1>Welcome To Quick Loan Guide</h1>
 
     <p>
-        Learn about loan options,
-        eligibility requirements,
-        interest rates and repayment terms.
+        Learn about loans, interest rates,
+        repayment terms and financial planning.
     </p>
 
     <a href="#offer" class="btn">
-        Explore Loan Options
+        EXPLORE NOW
     </a>
 
 </div>
 
-<!-- SERVICES SECTION -->
+<!-- SERVICES -->
 
 <section id="services">
 
-    <h2>Our Loan Information</h2>
+    <h2>Our Services</h2>
 
     <div class="cards">
 
         <div class="card">
-
-            <h3>Personal Loans</h3>
-
+            <h3>Personal Loan Information</h3>
             <p>
-                Learn about personal loan options,
-                eligibility and repayment conditions.
+                Understand personal loan concepts
+                and common requirements.
             </p>
-
         </div>
 
         <div class="card">
-
-            <h3>Loan Eligibility</h3>
-
+            <h3>Interest Rates</h3>
             <p>
-                Understand common eligibility
-                requirements before considering a loan.
+                Learn how interest rates affect
+                borrowing costs.
             </p>
-
         </div>
 
         <div class="card">
-
-            <h3>Repayment Information</h3>
-
+            <h3>Repayment Guide</h3>
             <p>
-                Understand interest rates,
-                fees and repayment schedules.
+                Understand repayment schedules
+                and financial responsibilities.
             </p>
-
         </div>
 
     </div>
 
 </section>
 
-<!-- ABOUT SECTION -->
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
-    <h2>Things To Consider Before Borrowing</h2>
+    <h2>About Us</h2>
 
-    <div class="cards">
+    <p>
+        Quick Loan Guide provides general
+        educational information about borrowing,
+        interest rates and financial planning.
+    </p>
 
-        <div class="card">
+    <br>
 
-            <h3>Interest Rates</h3>
-
-            <p>
-                Compare the interest rate
-                and total borrowing cost.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Additional Fees</h3>
-
-            <p>
-                Check processing fees,
-                late charges and other costs.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Repayment Terms</h3>
-
-            <p>
-                Review repayment periods
-                and monthly obligations.
-            </p>
-
-        </div>
-
-    </div>
+    <a href="#offer" class="btn">
+        LEARN MORE
+    </a>
 
 </section>
 
-<!-- AFFILIATE OFFER SECTION -->
+<!-- INFORMATION -->
 
-<section class="offer" id="offe
+<section class="offer" id="offer">
+
+    <h2>Explore Loan Information</h2>
+
+    <p>
+        Before considering any financial product,
+        understand its interest rate, fees,
+        eligibility and repayment conditions.
+    </p>
+
+    <br>
+
+    <a href="#services" class="btn">
+        VIEW SERVICES
+    </a>
+
+    <a href="#home" class="btn">
+        BACK TO HOME
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>QUICK LOAN GUIDE</h3>
+
+    <p>Learn. Understand. Plan.</p>
+
+    <br>
+
+    <p>
+        © 2026 QUICK LOAN GUIDE
+    </p>
+
+</footer>
+
+</body>
+</html>
